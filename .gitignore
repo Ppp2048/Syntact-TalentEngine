@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==========================================
+# Syntact-TalentEngine Custom Exclusions
+# ==========================================
+# Exclude massive raw streaming data
+data/*.jsonl
+data/*.json
+data/*.csv
+data/*.gz
+
+# Exclude local numpy binary cache files
+data/*.npy
+*.npy
+data/trial_embeddings.npy
+data/capability_embeddings.npy
+
+# Exclude system local outputs if you only want to track code
+# outputs/
