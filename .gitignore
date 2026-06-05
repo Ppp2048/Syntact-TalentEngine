@@ -1,0 +1,21 @@
+# Virtual Environment
+venv/
+.venv/
+ENV/
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Project Data & Binary Cache Files (CRITICAL)
+data/*.jsonl
+data/*.gz
+data/*.npy
+data/trial_embeddings.npy
+data/capability_embeddings.npy
+
+# Output/Submission files tracking bypass (Optional, keep if you want to track code only)
+# outputs/
