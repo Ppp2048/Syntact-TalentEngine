@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div align="center">
 
 # ⚡ Syntact TalentEngine
@@ -15,7 +14,7 @@
 [![Candidates](https://img.shields.io/badge/Dataset-100%2C000%20Candidates-blueviolet?style=for-the-badge)](#performance--benchmarks)
 [![Offline](https://img.shields.io/badge/Runtime-Fully%20Offline-red?style=for-the-badge)](#reproducibility-guide)
 
-**Redrob AI Hiring Challenge — Submission by Team Syntact**
+**Redrob AI Hiring Challenge — Submission by Team TheAxiom**
 
 </div>
 
@@ -36,13 +35,12 @@ These two independent signal channels are fused into a unified `(N, 405)` compos
 
 ## 🏗️ System Architecture
 
-> **[ Architecture Diagram — Insert PNG Here ]**
+> 
 >
-> *Drop your system architecture diagram at this path and embed it:*
+> 
+![Syntact TalentEngine Architecture](data/ArchDiagram.png)
 >
-> ```markdown
-> ![Syntact TalentEngine Architecture](assets/architecture.png)
-> ```
+>
 >
 > *Recommended diagram blocks:*
 > ```
@@ -356,12 +354,9 @@ TalentEngine addresses all constraints while introducing production-grade archit
 
 <div align="center">
 
-**Built with ⚡ by Team Syntact**
+**Built with ⚡ by Team TheAxiom**
 
 *Engineering equity-first AI talent discovery at scale.*
 
 </div>
-=======
-# Syntact-TalentEngine
-An AI-native recruitment pipeline built for the IndiaRuns Hackathon. Features multi-threaded offline sentence-embeddings, graph-based career velocity mapping, proactive honeypot sweeping, and dynamic query-grouped LambdaMART ranking trees to evaluate 100,000 candidates with strict deterministic fairness.
->>>>>>> e3ec7213078ed75688f38a41d029a843b61a2997
+
