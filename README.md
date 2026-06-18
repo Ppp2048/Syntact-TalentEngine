@@ -20,7 +20,7 @@
 
 ---
 
-## 🎯 What is Syntact TalentEngine?
+##  What is Syntact TalentEngine?
 
 Syntact TalentEngine is a **production-grade, multi-stage AI talent ranking pipeline** engineered to rank 100,000 candidates against a target job description with perfect discrimination fidelity — achieving an **NDCG@10 score of 1.0000** on CPU hardware with zero network dependencies.
 
@@ -33,7 +33,7 @@ These two independent signal channels are fused into a unified `(N, 405)` compos
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 > 
 >
@@ -73,7 +73,7 @@ These two independent signal channels are fused into a unified `(N, 405)` compos
 
 ## ⚔️ Legacy Screening vs. Syntact TalentEngine
 
-| Dimension | ❌ Traditional AI Screening | ✅ Syntact TalentEngine |
+| Dimension |  Traditional AI Screening |  Syntact TalentEngine |
 |---|---|---|
 | **Candidate Integrity** | No validation — inflated profiles pass unchecked | **Honeypot Sweep** flags and quarantines fabricated signal records before any scoring |
 | **Keyword Dependency** | Ranks on surface token frequency — SEO-gameable by keyword stuffing | **Semantic embedding** captures contextual alignment; keyword mismatch ≠ rank penalty |
@@ -88,9 +88,9 @@ These two independent signal channels are fused into a unified `(N, 405)` compos
 
 ---
 
-## 🔬 Architectural Deep-Dive
+##  Architectural Deep-Dive
 
-### 1. 🛡️ Honeypot Sweep — Profiling Defense Layer
+### 1.  Honeypot Sweep — Profiling Defense Layer
 
 The `TalentDataPipeline` applies a **multi-signal honeypot detection sweep** before any candidate is scored. This quarantine layer identifies and drops synthetic, bot-generated, or inflated profiles based on structural integrity checks on the `redrob_signals` block:
 
@@ -102,7 +102,7 @@ This guarantees that the LambdaMART model is never trained on corrupted or adver
 
 ---
 
-### 2. 📈 Chronological Intelligence — Career Velocity Mapping
+### 2.  Chronological Intelligence — Career Velocity Mapping
 
 Rather than naively summing tenure months, TalentEngine engineers three **career trajectory features** from the `career_history` list:
 
@@ -116,7 +116,7 @@ career_velocity_score   = num_transitions / total_career_duration
 
 ---
 
-### 3. 🌏 Contextual Vernacular Translation — Indian Tech Ecosystem Equity
+### 3.  Contextual Vernacular Translation — Indian Tech Ecosystem Equity
 
 This feature is **specifically engineered to address a systemic bias** in global AI screening systems that penalize candidates from Tier-2/3 Indian cities and non-IIT/IIM institutions whose project descriptions use localized terminology instead of Western enterprise vocabulary.
 
@@ -137,7 +137,7 @@ This directly addresses the **Redrob mission** of equity-first talent discovery.
 
 ---
 
-### 4. 🌲 Grouped LambdaMART Optimization — C++ Constraint Compliance
+### 4.  Grouped LambdaMART Optimization — C++ Constraint Compliance
 
 LightGBM's `LGBMRanker` internally uses a **C++ constraint**: no single query group may contain more than 10,000 training rows. A naive `group_sizes = [100000]` call crashes the runtime.
 
@@ -159,7 +159,7 @@ This computation is **fully adaptive** — the same code produces 1 group for a 
 
 ---
 
-### 5. ⚖️ Deterministic Tie-Breaking — Algorithmic Fairness Enforcement
+### 5.  Deterministic Tie-Breaking — Algorithmic Fairness Enforcement
 
 When two candidates receive identical `alignment_scores` from the LambdaMART predictor (a real occurrence at scale when behavioral signals are uniformly distributed), a random tiebreaker would:
 - Produce **different shortlists on consecutive runs** of identical data — a reproducibility violation.
@@ -201,7 +201,7 @@ shortlist_df = shortlist_df.sort_values(
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 Syntact-TalentEngine/
@@ -231,7 +231,7 @@ Syntact-TalentEngine/
 
 ---
 
-## 🚀 Reproducibility Guide
+##  Reproducibility Guide
 
 ### Prerequisites
 
@@ -325,7 +325,7 @@ CAND_0084267,2,8.2257,Data Scientist with 6.0 yrs; 9 AI core skills; response ra
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 | Package | Version | Role |
 |---|---|---|
@@ -340,7 +340,7 @@ CAND_0084267,2,8.2257,Data Scientist with 6.0 yrs; 9 AI core skills; response ra
 
 ---
 
-## 🏆 Hackathon Challenge Context
+##  Hackathon Challenge Context
 
 This system was built for the **Redrob AI Hiring Challenge**, which required:
 - Ranking 100,000 anonymized candidate profiles against a target job description
